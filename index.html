@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>NewsAPI V1</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"><!---REQUIREMENTS
+Page requires a key.js  file with the following format 
+var APIKEY = "apikey" from newspi.org
+-->
+</head>
+<body>
+	<h1>Article Headlines</h1>
+	<form id="source" name="source">
+		<div class="form-group">
+			<select class="btn btn-primary" data-style="btn-primary" id="selection">
+				<option value="default">
+					Pick a News Source
+				</option>
+			</select> <button class="btn btn-primary" type="submit">Retrieve Headlines</button>
+		</div>
+	</form>
+	<h2 id="top"></h2>
+	<ul id="headlines"></ul>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script> 
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+	</script> 
+	<script src="key.js">
+	</script> 
+	<script src="objects.js">
+	</script>
+</body>
+</html>
