@@ -7,7 +7,7 @@ $(document).ready(function() {
 			category: "general",
 			country: "us",
 			language: "en",
-			apiKey: "APIKEY", //must insert your own apikey for it to work//
+			apiKey: APIKEY, 
 		},
 		success: function(data) {
 			if (data.status === "ok") {
@@ -28,11 +28,11 @@ $(document).ready(function() {
 			method: "GET",
 			url: "https://newsapi.org/v2/top-headlines",
 			data: {
-				category: "general",
+				// category: "general",
 				sources: document.getElementById("selection").value,
-				country: "us",
+				// country: "us",
 				language: "en",
-				apiKey: "APIKEY", //must insert your own apikey for it to work//
+				apiKey: APIKEY, 
 			},
 			success: function(data) {
 				if (data.status === "ok") {
